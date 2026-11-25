@@ -4,6 +4,8 @@ Reads the USDC supply rate at two lenders on Solana, Kamino and Jupiter Lend, pu
 
 This is Deed #7 of The Solana Deeds, a series of one-day learning builds.
 
+It has a [write-up](https://reddi.tech/blog/solana-m2-yield-router) and a [demo](https://youtu.be/hgayP3aIwbA), about five minutes.
+
 This is a source snapshot of `03041dc378da0c0f9dde195d610c3d6a3520a3a5`. The private build journal, issue history, evidence files and hosted checks are not part of this repository. Test names and a few comments carry labels such as `M2-002` or `M2-007-S1`: those are outcome and scenario numbers from that private history. Built and reviewed by an AI agent session directed by the author; no independent review.
 
 ## What was built
