@@ -1,0 +1,9 @@
+# This repository pins Node 22 (mise.toml) and refuses anything else.
+engineStrict: true
+# Patched versions of two packages the Kamino SDK brings in through Anchor and
+# web3.js v1. Two advisories stay open and are listed in the README: stream-json
+# (its patched line breaks jayson's server, which nothing here loads) and
+# bigint-buffer (no patched version exists).
+overrides:
+  "@coral-xyz/anchor>toml": 5.0.1
+  "jayson>uuid": 11.1.1

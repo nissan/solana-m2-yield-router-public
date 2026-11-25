@@ -1,0 +1,101 @@
+/* Layout and the page's own states. The controls' look comes from @ui-sdk/core/web.css. */
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+h2 {
+  margin: 2rem 0 0.25rem;
+  font-size: 1.15rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+section > p {
+  margin: 0.25rem 0 0.75rem;
+}
+.notice {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+.lenders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+.lender {
+  padding: 0.75rem;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 0.5rem;
+}
+.lender[data-higher] {
+  border: 2px solid currentColor;
+}
+.badge {
+  margin-left: 0.25rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+.rate {
+  margin: 0.25rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.1rem 0.75rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+dt {
+  font-weight: 600;
+}
+dd {
+  margin: 0;
+}
+.source,
+code {
+  overflow-wrap: anywhere;
+}
+.problem,
+[data-kind="refused"],
+[data-kind="failed"] {
+  font-weight: 600;
+}
+.problem::before,
+[data-kind="refused"]::before,
+[data-kind="failed"]::before {
+  content: "⚠ ";
+}
+section > [data-slot="button"] {
+  margin: 0.5rem 0.5rem 0 0;
+}
+.log {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
